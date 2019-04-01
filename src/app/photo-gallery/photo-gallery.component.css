@@ -1,0 +1,74 @@
+/*------------------------ 2 Home ------------------------*/
+
+.main {
+    height: 100vh;
+    background-size: cover !important;
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.main:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    opacity: .85;
+    position: absolute;
+     
+}
+.main-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.hello {
+    color: #fff;
+    line-height: 51px;
+}
+
+.main-content {
+    padding: 0 60px;
+    vertical-align: middle;
+    display: table-cell;
+    width: 100%;
+    position: fixed;
+    padding-top: 25vh;
+}
+
+.animate-left-fade-in {
+    animation: 4s fadeInLeftSequence;
+}
+
+.fade-out {
+    animation: 4s fadeOutSequence;
+}
+
+
+@keyframes fadeOutSequence {
+    from {
+        opacity: 1;
+    }
+    to {        
+        opacity: 0;
+    }
+}
+@keyframes fadeInLeftSequence {
+    from {
+        opacity: 0;
+        right: -60px
+    }
+    to {        
+        opacity: 1;
+        right : 0px;
+    }
+}
+
+.gallery-img {
+    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
+}
